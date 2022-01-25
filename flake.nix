@@ -10,11 +10,16 @@
   };
 
   outputs = { self, nixpkgs, src }:
-    with import nixpkgs { system = "x86_64-linux"; };
+
+    let system = "x86_64-linux";
+    in with import nixpkgs { inherit system; };
+
     let python = python39;
     in rec {
 
-      defaultPackage.x86_64-linux = python.pkgs.buildPythonPackage rec {
+      defaultPackage."${system}" = packages."${system}".baycomp;
+
+      packages."${system}".baycomp = python.pkgs.buildPythonPackage {
         pname = "baycomp";
         version = "unstable";
 
