@@ -25,11 +25,11 @@
     "src": {
       "flake": false,
       "locked": {
-        "lastModified": 1639399339,
-        "narHash": "sha256-qHT2+Lid0EJZJRQ0ZpiBfBs+p3C9HX4KQTQFrmaJnrQ=",
+        "lastModified": 1648741820,
+        "narHash": "sha256-czIHbHi3hiI6cCwe6aVi903numCbc0Ic4l3SOY/oJcI=",
         "owner": "janezd",
         "repo": "baycomp",
-        "rev": "4cffdb34ad812b0efa6177f3986d86bf48c6ccea",
+        "rev": "9fc56da7c8b56eb1dbd2df725e18606818434a20",
         "type": "github"
       },
       "original": {
